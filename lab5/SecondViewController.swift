@@ -8,10 +8,11 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
     @IBOutlet weak var label: UILabel!
     
     var receivedMessage: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // При загрузке экрана устанавливаем текст сообщения
