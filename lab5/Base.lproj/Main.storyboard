@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="firts screen" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-1y-q78">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="First screen" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-1y-q78">
                                 <rect key="frame" x="76" y="103" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -62,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="secpnd screen" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBt-nj-8WB">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Second screen" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBt-nj-8WB">
                                 <rect key="frame" x="76" y="85" width="241" height="128"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
@@ -101,6 +101,22 @@
             </objects>
             <point key="canvasLocation" x="1879" y="4"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="iK3-ro-5Ww">
+            <objects>
+                <viewController id="wxo-1a-Pqe" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBG-Vg-Ppb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a9z-q6-7fW"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JZZ-xW-qqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wx8-lJ-KNF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2697" y="4"/>
+        </scene>
         <!--Item-->
         <scene sceneID="p5a-Oy-K1J">
             <objects>
@@ -133,11 +149,13 @@
                     <connections>
                         <segue destination="bp3-66-O8v" kind="relationship" relationship="viewControllers" id="mtA-XH-ncF"/>
                         <segue destination="YyH-by-lLB" kind="relationship" relationship="viewControllers" id="Sqt-6c-F5J"/>
+                        <segue destination="qCt-Bi-OPt" kind="relationship" relationship="viewControllers" id="bUE-Tb-VmT"/>
+                        <segue destination="Ffl-VS-BeQ" kind="relationship" relationship="viewControllers" id="bXC-4b-VjT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNA-Ul-UjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="-1451"/>
+            <point key="canvasLocation" x="2283" y="-1520"/>
         </scene>
         <!--Item-->
         <scene sceneID="cDS-2b-GJN">
@@ -158,6 +176,57 @@
             </objects>
             <point key="canvasLocation" x="1040" y="-673"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="OPx-zI-icz">
+            <objects>
+                <navigationController id="qCt-Bi-OPt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="XOw-rj-Ab4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Taq-f6-anW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wxo-1a-Pqe" kind="relationship" relationship="rootViewController" id="eAh-vI-99x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xT-no-V3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2697" y="-673"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="j2s-t6-cSJ">
+            <objects>
+                <navigationController id="Ffl-VS-BeQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wLj-mf-zDT"/>
+                    <navigationItem key="navigationItem" id="A0N-Sa-7G3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ue-3s-M9W">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pFO-Ee-xwA" kind="relationship" relationship="rootViewController" id="9rz-4Y-Dwp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ksj-nR-Eos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3479" y="-673"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="Eub-AX-a7d">
+            <objects>
+                <viewController id="pFO-Ee-xwA" customClass="FourthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Po-Pi-IcM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="j7B-xN-DfE"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jhT-dJ-mfr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tlq-zx-RYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3479" y="4"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="8tI-kb-Xiq"/>
@@ -169,8 +238,14 @@
         <systemColor name="systemFillColor">
             <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
